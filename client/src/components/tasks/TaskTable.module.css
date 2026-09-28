@@ -1,0 +1,74 @@
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.table th,
+.table td {
+  text-align: left;
+  padding: 10px 12px;
+  border-bottom: 1px solid var(--border);
+  font-size: 0.9rem;
+  vertical-align: top;
+}
+
+.table th {
+  color: var(--text-muted);
+  font-weight: 600;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+}
+
+.table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.title {
+  font-weight: 600;
+}
+
+.description {
+  color: var(--text-muted);
+  font-size: 0.82rem;
+  margin-top: 2px;
+}
+
+.owner {
+  font-family: monospace;
+  font-size: 0.8rem;
+  color: var(--text-muted);
+}
+
+.rowActions {
+  display: flex;
+  gap: 8px;
+  white-space: nowrap;
+}
+
+.rowActions button {
+  padding: 6px 10px;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  background: var(--bg);
+  color: var(--text);
+  font-size: 0.82rem;
+}
+
+.overdue {
+  background: rgba(192, 57, 43, 0.08);
+}
+
+.overdue td:nth-child(n) {
+  color: inherit;
+}
+
+.empty {
+  text-align: center;
+  color: var(--text-muted);
+  padding: 24px;
+}

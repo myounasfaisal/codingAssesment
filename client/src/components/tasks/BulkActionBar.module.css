@@ -1,0 +1,51 @@
+.bar {
+  display: flex;
+  align-items: flex-end;
+  gap: 16px;
+  padding: 12px 16px;
+  background: var(--surface);
+  border: 1px solid var(--accent);
+  border-radius: 8px;
+  font-size: 0.9rem;
+}
+
+.bar > span:first-child {
+  font-weight: 600;
+  padding-bottom: 8px;
+}
+
+.bar label {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  font-size: 0.8rem;
+  color: var(--text-muted);
+}
+
+.bar select {
+  padding: 6px 8px;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  background: var(--bg);
+  color: var(--text);
+}
+
+.bar button {
+  padding: 8px 14px;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  background: var(--accent);
+  color: white;
+  font-weight: 600;
+}
+
+.bar button:last-child {
+  background: var(--bg);
+  color: var(--text);
+  font-weight: normal;
+}
+
+.bar button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}

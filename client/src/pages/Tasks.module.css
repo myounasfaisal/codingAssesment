@@ -1,0 +1,80 @@
+.page {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 24px 16px 48px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 1.4rem;
+}
+
+.headerRight {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: var(--text-muted);
+  font-size: 0.9rem;
+}
+
+.headerRight button {
+  padding: 8px 14px;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  background: var(--bg);
+  color: var(--text);
+}
+
+.toolbar {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.primary {
+  padding: 9px 16px;
+  border: none;
+  border-radius: 6px;
+  background: var(--accent);
+  color: white;
+  font-weight: 600;
+}
+
+.primary:hover {
+  background: var(--accent-hover);
+}
+
+.errorBanner {
+  padding: 12px 16px;
+  border: 1px solid var(--danger);
+  border-radius: 6px;
+  background: rgba(192, 57, 43, 0.08);
+  color: var(--danger);
+  font-size: 0.9rem;
+}
+
+.loadMore {
+  display: flex;
+  justify-content: center;
+}
+
+.loadMore button {
+  padding: 9px 20px;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  background: var(--surface);
+  color: var(--text);
+}
+
+.loadMore button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
