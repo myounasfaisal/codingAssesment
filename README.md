@@ -154,7 +154,5 @@ All error responses share one shape: `{ "error": { "message": string, "code"?: s
 
 ## Known limitations / what I'd do with more time
 
-- **No automated test suite.** Verification so far has relied on manual API testing and type-checking; given more time I'd add integration tests for the auth/RBAC/scoping logic (the highest-risk area) and component/e2e tests for the Tasks UI.
-- **No rate limiting** on auth endpoints (login/refresh), so brute-forcing credentials isn't mitigated at the application layer.
 - **Cookie `secure` flag is `false` in dev** (driven off `NODE_ENV`, see `server/src/utils/cookies.ts`) since local dev runs over plain HTTP — this must become `true` before any deployment behind HTTPS, or browsers will silently drop the cookie over an insecure connection.
 - **Owner column on the tasks table shows a raw `ownerId`**, not a resolved name/email — the list endpoint doesn't join the owner relation. A `select`/`include` on the Prisma query plus a small user lookup on the client would fix this.
