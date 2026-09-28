@@ -39,7 +39,7 @@ Requires Node.js and Docker.
 ### 1. Clone and start Postgres
 
 ```bash
-git clone <this-repo-url>
+git clone "https://github.com/myounasfaisal/codingAssesment"
 cd assessment
 docker run -d --name taskhub-db \
   -e POSTGRES_USER=taskhub \
