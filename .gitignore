@@ -1,0 +1,8 @@
+node_modules/
+dist/
+.env
+*.log
+
+# Local-only reference docs (not part of the public project)
+PROGRESS.md
+INTERVIEW_NOTES.md
