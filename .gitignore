@@ -6,3 +6,4 @@ dist/
 # Local-only reference docs (not part of the public project)
 PROGRESS.md
 INTERVIEW_NOTES.md
+ARCHITECTURE_FLOW.md
