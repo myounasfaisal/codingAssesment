@@ -1,5 +1,5 @@
 import { useCallback, useEffect, useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { useAuth } from "../context/AuthContext";
 import * as userService from "../services/user.service";
 import type { Role } from "../types/auth";
@@ -68,6 +68,7 @@ export function AdminUsers() {
       <header className={styles.header}>
         <h1>Manage users</h1>
         <div className={styles.headerRight}>
+          <Link to="/tasks">Home</Link>
           <span>{user?.email}</span>
           <button onClick={handleLogout}>Log out</button>
         </div>

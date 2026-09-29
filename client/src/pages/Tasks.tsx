@@ -162,6 +162,7 @@ export function Tasks() {
       <header className={styles.header}>
         <h1>TaskHub Pro</h1>
         <div className={styles.headerRight}>
+          <Link to="/">Home</Link>
           <span>{user?.email}</span>
           {user?.role === "ADMIN" && <Link to="/admin/users">Manage users</Link>}
           <button onClick={handleLogout}>Log out</button>
